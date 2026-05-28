@@ -7,12 +7,12 @@
 
 ## 👥 Equipo
 
-| Nombre | Usuario GitHub |
-|--------|---------------|
-| Junior Josué Najera Higuera | junior-programeer | 421112869 |
-| Carlo Magno Romero Calixto| CarloRomer0 |
-| Héctor Albino López González | donut004 |
-| Tarek Almodovar Tufiño | tarekalmodovar |
+| Nombre | Usuario GitHub | No. de Cuenta |
+|--------|---------------|---------------|
+| (Tu nombre) | junior-programeer | 421112869 |
+| Carlo Romero | CarloRomer0 | 111111111 |
+| Héctor Albino López González | donut004 | 333333333 |
+| Tarek Almodovar Tufiño | tarekalmodovar | 222222222 |
 
 ---
 
