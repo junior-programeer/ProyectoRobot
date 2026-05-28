@@ -9,7 +9,7 @@
 
 | Nombre | Usuario GitHub |
 |--------|---------------|
-| (Tu nombre) | junior-programeer |
+| Junior Josué Najera Higuera | junior-programeer | 421112869 |
 | Carlo Romero | CarloRomer0 |
 | Héctor Albino López González | donut004 |
 | Tarek Almodovar Tufiño | tarekalmodovar |
