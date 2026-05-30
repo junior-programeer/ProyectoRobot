@@ -11,7 +11,7 @@
 |--------|---------------|---------------|
 | (Tu nombre) | junior-programeer | 421112869 |
 | Carlo Romero | CarloRomer0 | 111111111 |
-| Héctor Albino López González | donut004 | 333333333 |
+| Héctor Albino López González | donut004 | 320342732 |
 | Tarek Almodovar Tufiño | tarekalmodovar | 423127375 |
 
 ---
