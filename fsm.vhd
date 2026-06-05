@@ -143,42 +143,50 @@ begin
     mot_l_b <= '0';
     mot_r_a <= '0';
     mot_r_b <= '0';
-
-    if luz_front='1' or luz_left='1' or luz_right='1' then
-        estado <= ESTADO_SEGUIR_LUZ;
-    end if;
+		  if luz_front='1' or luz_left='1' or luz_right='1' or luz_back='1' then
+    estado <= ESTADO_SEGUIR_LUZ;
+end if;
+   
 
             -- ================================================
             -- SEGUIR_LUZ
             -- ================================================
             when ESTADO_SEGUIR_LUZ =>
-                leds_state <= "010";
+    leds_state <= "010";
 
-                if luz_front='1' and luz_left='1' and luz_right='1' then
-                    estado  <= ESTADO_META;
-                    mot_l_a <= '0'; mot_l_b <= '0';
-                    mot_r_a <= '0'; mot_r_b <= '0';
+    if luz_front='1' and luz_left='1' and luz_right='1' then
+        estado  <= ESTADO_META;
+        mot_l_a <= '0'; mot_l_b <= '0';
+        mot_r_a <= '0'; mot_r_b <= '0';
 
-                elsif luz_front = '1' then
-                    mot_l_a <= '1'; mot_l_b <= '0';
-                    mot_r_a <= '1'; mot_r_b <= '0';
+    -- El que va a la izquierda ahora va al frente
+    elsif luz_left = '1' then
+        mot_l_a <= '1'; mot_l_b <= '0';
+        mot_r_a <= '1'; mot_r_b <= '0';
 
-                elsif luz_left = '1' then
-                    mot_l_a <= '0'; mot_l_b <= '1';
-                    mot_r_a <= '1'; mot_r_b <= '0';
+    -- El que va en reversa ahora va a la izquierda
+    elsif luz_back = '1' then
+        mot_l_a <= '0'; mot_l_b <= '1';
+        mot_r_a <= '1'; mot_r_b <= '0';
 
-                elsif luz_right = '1' then
-                    mot_l_a <= '1'; mot_l_b <= '0';
-                    mot_r_a <= '0'; mot_r_b <= '1';
+    -- El que va al frente ahora gira a la derecha
+    elsif luz_front = '1' then
+        mot_l_a <= '1'; mot_l_b <= '0';
+        mot_r_a <= '0'; mot_r_b <= '1';
 
-                else
-    estado  <= ESTADO_BUSCAR_LUZ;
+    -- El de la derecha se queda igual
+    elsif luz_right = '1' then
+        mot_l_a <= '0'; mot_l_b <= '1';
+        mot_r_a <= '0'; mot_r_b <= '1';
 
-    mot_l_a <= '0';
-    mot_l_b <= '0';
-    mot_r_a <= '0';
-    mot_r_b <= '0';
-end if;
+    else
+        estado  <= ESTADO_BUSCAR_LUZ;
+
+        mot_l_a <= '0';
+        mot_l_b <= '0';
+        mot_r_a <= '0';
+        mot_r_b <= '0';
+    end if;
 
             -- ================================================
             -- META: parado
