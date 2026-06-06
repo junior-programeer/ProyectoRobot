@@ -1,5 +1,5 @@
 -- ==========================================================
--- FSM - SEGUIR luz con estado de esquive
+-- FSM -SEUIR luz con estado de esquive
 -- Estados:
 --   ESTADO_INICIO      : 1 segundo parado
 --   ESTADO_BUSCAR_LUZ  : detenido hasta detectar luz
@@ -73,7 +73,7 @@ architecture Behavioral of fsm is
     signal esquive_cnt : natural range 0 to ESQUIVE_MAX := 0;
 
 begin
-    -- debounce + normalizacion LDR
+    -- Debounce y nomralizacion ldr
     process(clk, reset)
     begin
         if reset = '0' then
@@ -131,11 +131,11 @@ begin
         end if;
     end process;
 
-
-    -- Prioridad de obstaculo:Si obstaculo_20cm = '1' durante BUSCAR_LUZ o SEGUIR_LUZ,entra a ESTADO_ESQUIVE.
-    --	ESTADO_ESQUIVE:
-    -- Solo activa un motor para girar hacia un lado.
-    -- Para girar al lado contrario, apaga el izquierdo y activa el derecho.
+    -- Prioridad de obstaculo:
+    --   Si obstaculo_20cm = '1' durante BUSCAR_LUZ o SEGUIR_LUZ,
+    --   entra a ESTADO_ESQUIVE.
+    -- ESTADO_ESQUIVE:
+    --   Para girar al lado contrario, apaga el izquierdo y activa el derecho.
     process(clk, reset)
     begin
         if reset = '0' then
@@ -165,6 +165,7 @@ begin
 
             else
                 case estado is
+
                     when ESTADO_INICIO =>
                         leds_state <= "000";
                         mot_l_a    <= '0';
@@ -253,7 +254,6 @@ begin
                         else
                             esquive_cnt <= esquive_cnt + 1;
                         end if;
-
                     -- META: parado
                     when ESTADO_META =>
                         leds_state <= "111";
