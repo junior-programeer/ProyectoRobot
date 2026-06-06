@@ -45,8 +45,7 @@
 21. [Video funcional](#21-video-funcional)
 22. [Conclusión del manual](#22-conclusión-del-manual)
 23. [Referencias](#23-referencias)
-24. [Archivos recomendados para el repositorio](#24-archivos-recomendados-para-el-repositorio)
-25. [Resumen rápido de uso](#25-resumen-rápido-de-uso)
+24. [Resumen rápido de uso](#24-resumen-rápido-de-uso)
 
 ---
 
