@@ -428,25 +428,7 @@ El robot integra sensores, motores, lógica digital y una Máquina de Estados Fi
 
 ---
 
-# 24. Archivos recomendados para el repositorio
-
-Para que el repositorio esté ordenado, se recomienda organizarlo de la siguiente forma:
-
-```text
-Proyecto_Final_VLSI/
-│
-├── README.md
-├── MANUAL_USUARIO.md
-├── top.vhd
-├── fsm.vhd
-├── ultrasonico_hcsr04.vhd
-└── documentacion/
-    └── reporte_final.pdf
-```
-
----
-
-# 25. Resumen rápido de uso
+# 24. Resumen rápido de uso
 
 ```text
 1. Conectar FPGA, sensores, driver y motores.
