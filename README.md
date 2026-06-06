@@ -45,20 +45,11 @@ ProyectoRobot/
 │       ├── L293D.pdf
 │       ├── LM339.pdf
 │       └── HC-SR04.pdf
-├── src/
+├── codigo-vhdl/
 │   ├── top.vhd                 # Entidad top-level
 │   ├── fsm.vhd                 # FSM principal
-│   ├── pwm.vhd                 # Generador PWM
-│   ├── ultrasonico.vhd         # Controlador HC-SR04
-│   ├── ldr_sensor.vhd          # Lector de sensores de luz
-│   ├── debounce.vhd            # Debounce para botones
-│   └── clk_divider.vhd        # Divisor de reloj
-├── sim/
-│   ├── tb_fsm.vhd              # Testbench FSM
-│   ├── tb_pwm.vhd              # Testbench PWM
-│   └── tb_ultrasonico.vhd      # Testbench sensor ultrasónico
-└── constraints/
-    └── pines.xdc               # Asignación de pines FPGA
+│   ├── ultrasonico_hcsr04.vhd  # Controlador HC-SR04
+│   ├── Robot_PFVLSI_2026-2.qar #Proyecto empaquetado
 ```
 
 ---
