@@ -6,6 +6,12 @@
 --   ESTADO_SEGUIR_LUZ  : mueve motores segun LDR
 --   ESTADO_ESQUIVE     : inicia con obstaculo a 20 cm o menos
 --   ESTADO_META        : parado al cumplir condicion de meta
+
+--Autores:
+--Almodovar Tufiño Tarek - 423127375
+--Najera Higuera Junior Josue - 421112869
+--Romero Calixto Carlo Magno - 320187890
+--Lopez Gonzalez Hector Albino - 320342732
 -- ==========================================================
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
