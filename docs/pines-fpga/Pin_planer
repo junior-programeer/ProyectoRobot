@@ -1,0 +1,21 @@
+La siguiente tabla muestra la asignación de pines utilizada para conectar los sensores, motores y LEDs a la tarjeta FPGA DE10-Lite.
+
+| Señal           | Dirección | Pin        |
+| --------------- | --------- | ---------- |
+| `clk`           | Entrada   | `PIN_P11`  |
+| `reset`         | Entrada   | `PIN_B8`   |
+| `ldr_front`     | Entrada   | `PIN_W10`  |
+| `ldr_left`      | Entrada   | `PIN_W7`   |
+| `ldr_right`     | Entrada   | `PIN_W9`   |
+| `ldr_back`      | Entrada   | `PIN_V10`  |
+| `us_echo`       | Entrada   | `PIN_AB12` |
+| `us_trigger`    | Salida    | `PIN_Y11`  |
+| `mot_l_a`       | Salida    | `PIN_AA15` |
+| `mot_l_b`       | Salida    | `PIN_W13`  |
+| `mot_r_a`       | Salida    | `PIN_W5`   |
+| `mot_r_b`       | Salida    | `PIN_AA14` |
+| `leds_state[0]` | Salida    | `PIN_A8`   |
+| `leds_state[1]` | Salida    | `PIN_A9`   |
+| `leds_state[2]` | Salida    | `PIN_A10`  |
+| `Alimentacion sensores` | Salida    | `PIN 11`  |
+| `Alimentacion motores`  | Salida    | `PIN 12`  |
