@@ -134,9 +134,9 @@ Botones ►│  debounce   │─┘        │
 ## 📦 Entregables
 
 - [x] Repositorio público con código, documentación y archivos de diseño
-- [ ] Video demo (≤ 5 min) — grabado en entrega presencial
-- [ ] Reporte PDF con: arquitectura, FSMs, verificación, recursos, resultados y límites
-- [ ] Datasheets y esquemas como anexos del reporte
+- [x] Video demo (≤ 5 min) — grabado en entrega presencial
+- [x] Reporte PDF con: arquitectura, FSMs, verificación, recursos, resultados y límites
+- [x] Datasheets y esquemas como anexos del reporte
 
 ---
 
